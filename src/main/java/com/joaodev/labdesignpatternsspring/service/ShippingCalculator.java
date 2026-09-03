@@ -4,10 +4,12 @@ import com.joaodev.labdesignpatternsspring.domain.Order;
 import com.joaodev.labdesignpatternsspring.domain.ShippingType;
 import com.joaodev.labdesignpatternsspring.exception.ShippingStrategyNotFoundException;
 import com.joaodev.labdesignpatternsspring.service.shipping.ShippingStrategy;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.Map;
 
+@Service
 public class ShippingCalculator {
 
     private final Map<String, ShippingStrategy> strategies;
