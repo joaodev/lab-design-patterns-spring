@@ -49,7 +49,7 @@ public class OrderService {
 
     private Order findOrderOrThrow(Long id) {
         return orderRepository.findById(id)
-                .orElseThrow(() -> new OrderNotFoundException("Pedido não localizado com o id: " + id));
+                .orElseThrow(() -> new OrderNotFoundException(id));
     }
 
     private Order applyStatusChange(Order order, OrderStatus previousStatus, OrderState nextState) {

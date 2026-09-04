@@ -22,9 +22,7 @@ public class ShippingCalculator {
         ShippingStrategy strategy = strategies.get(type.name());
 
         if (strategy == null) {
-            throw new ShippingStrategyNotFoundException(
-                    "Nenhuma estratégia de frete encontrada para o tipo: " + type.name()
-            );
+            throw new ShippingStrategyNotFoundException(type.name());
         }
 
         return strategy.calculate(order);

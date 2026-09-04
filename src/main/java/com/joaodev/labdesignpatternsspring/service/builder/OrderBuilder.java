@@ -29,9 +29,7 @@ public class OrderBuilder {
         }
 
         if (product.getStockQuantity() < quantity) {
-            throw new InsufficientStockException(
-                    "Estoque insuficiente para o produto: " + product.getName()
-            );
+            throw new InsufficientStockException(product.getName());
         }
 
         OrderItem item = OrderItem.builder()

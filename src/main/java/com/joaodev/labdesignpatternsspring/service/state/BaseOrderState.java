@@ -26,8 +26,6 @@ public abstract class BaseOrderState implements OrderState {
     }
 
     private InvalidOrderStateTransitionException invalidTransition(String action) {
-        return new InvalidOrderStateTransitionException(
-                "Não é possível " + action + " um pedido no estado " + getStatusName()
-        );
+        return new InvalidOrderStateTransitionException(action, getStatusName());
     }
 }
