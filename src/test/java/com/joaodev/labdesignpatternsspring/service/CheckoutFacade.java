@@ -3,7 +3,7 @@ package com.joaodev.labdesignpatternsspring.service;
 import com.joaodev.labdesignpatternsspring.domain.*;
 import com.joaodev.labdesignpatternsspring.repository.CustomerRepository;
 import com.joaodev.labdesignpatternsspring.repository.ProductRepository;
-import com.joaodev.labdesignpatternsspring.service.dto.ItemRequest;
+import com.joaodev.labdesignpatternsspring.dto.ItemRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

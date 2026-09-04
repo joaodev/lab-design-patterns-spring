@@ -4,7 +4,7 @@ import com.joaodev.labdesignpatternsspring.domain.*;
 import com.joaodev.labdesignpatternsspring.repository.OrderRepository;
 import com.joaodev.labdesignpatternsspring.repository.PaymentRepository;
 import com.joaodev.labdesignpatternsspring.service.builder.OrderBuilder;
-import com.joaodev.labdesignpatternsspring.service.dto.ItemRequest;
+import com.joaodev.labdesignpatternsspring.dto.ItemRequest;
 import com.joaodev.labdesignpatternsspring.service.payment.PaymentProcessor;
 import com.joaodev.labdesignpatternsspring.service.payment.PaymentProcessorFactory;
 import com.joaodev.labdesignpatternsspring.service.payment.PaymentResult;

@@ -1,4 +1,4 @@
-package com.joaodev.labdesignpatternsspring.service.dto;
+package com.joaodev.labdesignpatternsspring.dto;
 
 import com.joaodev.labdesignpatternsspring.domain.Product;
 
